@@ -1,5 +1,6 @@
-#Production would enforce https
-#Logging/auditing would be added as well. 
+# Production would enforce https
+# Logging/auditing would be added as well.
+# Rate Limiting should also be implemented 
 from flask_jwt_extended import JWTManager
 from flask import Flask
 from flask_cors import CORS
