@@ -41,8 +41,6 @@ TODO:
 
      Monitoring, alerting, and metrics (Prometheus/Grafana)
 
-     Containerized and CI/CD-ready build
-
      Add a CI/CD pipeline with tests
 
      Containerize the whole thing
