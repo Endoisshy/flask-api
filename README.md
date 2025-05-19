@@ -7,3 +7,44 @@ run `docker-compose up -d` then after installing requirements.txt `python3 init_
 run `python3 main.py` Flask uses port 5000 by default when running its built in development server.
 
 Navigate to http://localhost:5000/apidocs/ to access the swaggerUI
+
+
+TODO:    
+
+     Token revocation / blacklist support
+
+     MFA
+
+     KYC status enforcement (e.g., preventing unverified users from transferring funds)
+
+     IP address logging & anomaly detection (critical for fraud prevention)
+
+     Encrypted storage for sensitive PII at rest
+
+     HTTPS-only enforcement
+
+     Security headers (CSP, HSTS, etc. via Flask middleware)
+
+     Rate limiting / abuse prevention (Flask-Limiter or API gateway enforcement)
+
+     Audit logging of sensitive actions (transfers, logins, failed attempts)
+
+     Automatic account locking after X failed login attempts
+
+     Celery/Task queue for async operations (sending verification email)
+
+     Email verification logic
+
+     Unit & integration tests
+
+     Health checks & observability
+
+     Monitoring, alerting, and metrics (Prometheus/Grafana)
+
+     Containerized and CI/CD-ready build
+
+     Add a CI/CD pipeline with tests
+
+     Containerize the whole thing
+
+     Add error monitoring (Sentry) and infra security (OWASP headers)
