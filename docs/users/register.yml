@@ -1,0 +1,43 @@
+  tags:
+    - Users
+  summary: Register a new user
+  description: Create a new user with email, password, full name, and username.
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            email:
+              type: string
+              example: user@example.com
+            password:
+              type: string
+              example: SecurePass123!
+            full_name:
+              type: string
+              example: Alice Smith
+            username:
+              type: string
+              example: alicesmith
+  responses:
+    200:
+      description: Registration success message
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                example: A verification email has been sent to your provided email address
+    400:
+      description: Validation errors
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errors:
+                type: object

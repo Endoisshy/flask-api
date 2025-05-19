@@ -1,0 +1,13 @@
+tags:
+  - Transactions
+summary: Generate One-Time Token
+description: Generate a short-lived JWT for sensitive operations like transfers.
+responses:
+  200:
+    description: One-time token created
+    content:
+      application/json:
+        example:
+          one_time_token: "string.jwt.token"
+  401:
+    description: Unauthorized

@@ -1,0 +1,12 @@
+bcrypt==3.2.2
+flask
+flask-jwt-extended
+flask-cors
+flask-sqlalchemy
+flasgger
+python-decouple
+marshmallow
+psycopg2-binary
+passlib
+
+

@@ -1,0 +1,16 @@
+tags:
+  - Transactions
+summary: Get Account Balance
+description: Retrieve the balance of the authenticated user's account.
+responses:
+  200:
+    description: Balance retrieved
+    content:
+      application/json:
+        example:
+          balance: "10000.00"
+  404:
+    description: Account not found
+  401:
+    description: Unauthorized
+

@@ -1,0 +1,29 @@
+tags:
+  - Transactions
+summary: Transfer Funds
+description: Transfer funds to another user using their username. Requires a one-time token.
+requestBody:
+  required: true
+  content:
+    application/json:
+      schema:
+        type: object
+        properties:
+          recipient_username:
+            type: string
+            example: "alice123"
+          amount:
+            type: number
+            example: 100.0
+responses:
+  200:
+    description: Transfer successful
+  400:
+    description: Invalid input or insufficient funds
+  401:
+    description: One-time token missing or invalid
+  404:
+    description: Recipient not found or account missing
+  500:
+    description: Server error
+
